@@ -44,4 +44,5 @@ MODELSIM_DIR="/usr/local/intelFPGA_lite/20.1/modelsim_ase/bin"
 export QSYS_ROOTDIR="/usr/local/intelFPGA_lite/20.1/quartus/sopc_builder/bin"
 # Add Quartus to PATH
 export PATH="$QUARTUS_DIR:$PATH"
+# Add Modelsim to PATH
 export PATH="$MODELSIM_DIR:$PATH"
