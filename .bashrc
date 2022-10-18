@@ -30,6 +30,18 @@ unset rc
 ###########
 # ALIASES #
 ###########
-alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
+alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+alias grepr='grep -r .'
+alias findn='find . -name'
+alias nv='neovide'
+
+#########
+# PATHS #
+#########
+QUARTUS_DIR="/usr/local/intelFPGA_lite/20.1/quartus/bin"
+MODELSIM_DIR="/usr/local/intelFPGA_lite/20.1/modelsim_ase/bin"
 export QSYS_ROOTDIR="/usr/local/intelFPGA_lite/20.1/quartus/sopc_builder/bin"
+# Add Quartus to PATH
+export PATH="$QUARTUS_DIR:$PATH"
+export PATH="$MODELSIM_DIR:$PATH"
