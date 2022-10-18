@@ -39,13 +39,18 @@ alias nv='neovide'
 #########
 # PATHS #
 #########
+
 QUARTUS_DIR="/usr/local/intelFPGA_lite/20.1/quartus/bin"
 MODELSIM_DIR="/usr/local/intelFPGA_lite/20.1/modelsim_ase/bin"
+OS161_DIR="~/Code/os161/tools/bin"
 export QSYS_ROOTDIR="/usr/local/intelFPGA_lite/20.1/quartus/sopc_builder/bin"
+
 # Add Quartus to PATH
 export PATH="$QUARTUS_DIR:$PATH"
 # Add Modelsim to PATH
 export PATH="$MODELSIM_DIR:$PATH"
+# Add OS/161 to PATH
+export PATH="$OS161_DIR:$PATH"
 
 ##############
 # OH MY BASH #
