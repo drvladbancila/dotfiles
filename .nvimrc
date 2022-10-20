@@ -41,9 +41,6 @@ let g:tagbar_autoshowtag = 1
 " Call FixWhitespace before saving the file
 autocmd BufWritePre * FixWhitespace
 
-" Note-taking setup
-let g:notes_directories = ['~/Dropbox/Notes']
-
 " PLUGINS
 call plug#begin()
 " Git wrapper
@@ -58,10 +55,6 @@ Plug 'majutsushi/tagbar'
 Plug 'valloric/youcompleteme'
 " Trailing white spaces plugin
 Plug 'bronson/vim-trailing-whitespace'
-" Plugin for easy note taking
-Plug 'xolox/vim-notes'
-" Plugin with miscellaneous auto-load scripts
-Plug 'xolox/vim-misc'
 
 " Adwaita colorscheme
 " Plug 'Mofiqul/adwaita.nvim'
