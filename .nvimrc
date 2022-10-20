@@ -62,4 +62,8 @@ Plug 'bronson/vim-trailing-whitespace'
 Plug 'xolox/vim-notes'
 " Plugin with miscellaneous auto-load scripts
 Plug 'xolox/vim-misc'
+" Adwaita colorscheme
+Plug 'Mofiqul/adwaita.nvim'
 call plug#end()
+
+colorscheme adwaita
