@@ -40,6 +40,11 @@ set wrap
 let g:tagbar_autoshowtag = 1
 " Call FixWhitespace before saving the file
 autocmd BufWritePre * FixWhitespace
+" Open NERDTree at startup
+" autocmd VimEnter * NERDTree
+
+" Automatically close NVIM when closing the file (even if NERDTree is still open)
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
 " PLUGINS
 call plug#begin()
