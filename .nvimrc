@@ -55,9 +55,14 @@ Plug 'majutsushi/tagbar'
 Plug 'valloric/youcompleteme'
 " Trailing white spaces plugin
 Plug 'bronson/vim-trailing-whitespace'
+" Plugin for distracion-less writing
+Plug 'junegunn/goyo.vim'
+Plug 'folke/zen-mode.nvim'
+" Highligh only current line
+Plug 'junegunn/limelight.vim'
 
 " Adwaita colorscheme
-" Plug 'Mofiqul/adwaita.nvim'
+Plug 'Mofiqul/adwaita.nvim'
 " Nord colorscheme
 Plug 'arcticicestudio/nord-vim'
 call plug#end()

@@ -41,6 +41,9 @@ let g:tagbar_autoshowtag = 1
 " Call FixWhitespace before saving the file
 autocmd BufWritePre * FixWhitespace
 
+" Clipboard
+set clipboard=unnamedplus
+
 " PLUGINS
 call plug#begin()
 " Git wrapper
