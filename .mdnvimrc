@@ -27,10 +27,11 @@ endfunction
 " Set colorscheme
 colorscheme peachpuff
 
-autocmd VimEnter * Goyo
+autocmd! User GoyoEnter Limelight
+autocmd! User GoyoLeave Limelight!
 
 autocmd! User GoyoEnter call <SID>goyo_enter()
 autocmd! User GoyoLeave call <SID>goyo_leave()
 
-autocmd! User GoyoEnter Limelight
-autocmd! User GoyoLeave Limelight!
+autocmd VimEnter * Goyo
+autocmd VimEnter * NERDTree

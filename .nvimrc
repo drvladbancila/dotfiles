@@ -41,10 +41,20 @@ let g:tagbar_autoshowtag = 1
 " Call FixWhitespace before saving the file
 autocmd BufWritePre * FixWhitespace
 " Open NERDTree at startup
-" autocmd VimEnter * NERDTree
+autocmd VimEnter * NERDTree
 
 " Automatically close NVIM when closing the file (even if NERDTree is still open)
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+
+" Keybindings for AnyJump
+" Normal mode: Jump to definition under cursor
+nnoremap <leader>j :AnyJump<CR>
+" Visual mode: jump to selected text in visual mode
+xnoremap <leader>j :AnyJumpVisual<CR>
+" Normal mode: open previous opened file (after jump)
+nnoremap <leader>ab :AnyJumpBack<CR>
+" Normal mode: open last closed search window again
+nnoremap <leader>al :AnyJumpLastResults<CR>
 
 " PLUGINS
 call plug#begin()
@@ -60,6 +70,8 @@ Plug 'majutsushi/tagbar'
 Plug 'valloric/youcompleteme'
 " Trailing white spaces plugin
 Plug 'bronson/vim-trailing-whitespace'
+" Plugin to jump through source code
+Plug 'pechorin/any-jump.vim'
 " Plugin for distracion-less writing
 Plug 'junegunn/goyo.vim'
 Plug 'folke/zen-mode.nvim'
