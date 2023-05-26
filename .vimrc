@@ -44,6 +44,14 @@ autocmd BufWritePre * FixWhitespace
 " Clipboard
 set clipboard=unnamedplus
 
+" Move lines of code with Alt-j and Alt-k
+nnoremap <A-j> :m .+1<CR>==
+nnoremap <A-k> :m .-2<CR>==
+inoremap <A-j> <Esc>:m .+1<CR>==gi
+inoremap <A-k> <Esc>:m .-2<CR>==gi
+vnoremap <A-j> :m '>+1<CR>gv=gv
+vnoremap <A-k> :m '<-2<CR>gv=gv
+
 " PLUGINS
 call plug#begin()
 " Git wrapper
@@ -58,4 +66,9 @@ Plug 'majutsushi/tagbar'
 Plug 'valloric/youcompleteme'
 " Trailing white spaces plugin
 Plug 'bronson/vim-trailing-whitespace'
+" Vim Resize
+Plug 'antoinemadec/vim-verilog-instance'
+" Vim Tmux Navigator
+Plug 'christoomey/vim-tmux-navigator'
+Plug '~/Code/svxplor'
 call plug#end()
