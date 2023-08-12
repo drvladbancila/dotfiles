@@ -14,7 +14,7 @@ export PATH
 
 # Run TMUX as default shell
 if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
-  exec tmux
+    exec tmux
 fi
 
 # Uncomment the following line if you don't like systemctl's auto-paging feature:
@@ -31,6 +31,9 @@ fi
 
 unset rc
 . "$HOME/.cargo/env"
+
+# Enable fzf for Bash History
+. /usr/share/fzf/shell/key-bindings.bash
 
 ###########
 # ALIASES #

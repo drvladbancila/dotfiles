@@ -52,6 +52,7 @@ inoremap <A-k> <Esc>:m .-2<CR>==gi
 vnoremap <A-j> :m '>+1<CR>gv=gv
 vnoremap <A-k> :m '<-2<CR>gv=gv
 
+
 " PLUGINS
 call plug#begin()
 " Git wrapper
@@ -70,5 +71,7 @@ Plug 'bronson/vim-trailing-whitespace'
 Plug 'antoinemadec/vim-verilog-instance'
 " Vim Tmux Navigator
 Plug 'christoomey/vim-tmux-navigator'
+" Vim undo tree
+Plug 'mbbill/undotree'
 Plug '~/Code/svxplor'
 call plug#end()
