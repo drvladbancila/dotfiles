@@ -36,6 +36,8 @@ set si
 " Wrap Lines
 set wrap
 
+set path+=**
+
 " Tagbar settings
 let g:tagbar_autoshowtag = 1
 " Open NERDTree at startup

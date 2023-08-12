@@ -36,6 +36,9 @@ set si
 " Wrap Lines
 set wrap
 
+" Allow find files
+set path+=**
+
 " Tagbar settings
 let g:tagbar_autoshowtag = 1
 " Call FixWhitespace before saving the file
